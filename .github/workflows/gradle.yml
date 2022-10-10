@@ -58,7 +58,7 @@ jobs:
         run: >
           aws deploy create-deployment --application-name be-112-codinginfant
           --deployment-config-name CodeDeployDefault.AllAtOnce
-          --deployment-group-name be-112-codinginfant
+          --deployment-group-name be-112-codinginfant-group
           --s3-location bucket=$S3_BUCKET_NAME,bundleType=zip,key=practice-deploy.zip
 
       - name: Run chmod to make gradlew executable
